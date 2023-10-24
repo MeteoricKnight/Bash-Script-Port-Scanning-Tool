@@ -17,7 +17,7 @@ To use this script, you need:
 
 1. Clone this repository to your local machine:
  ```
- git clone https://github.com/MeteoricKnight/Bash-PortScanner.git
+ git clone https://github.com/MeteoricKnight/Bash-Script-Port-Scanning-Tool.git
 ```
 2. Change directory to the project folder:
 3. Run the script with the desired options:
