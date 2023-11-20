@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Default values
+
 ip=""
 ports=""
 
-# Parse command line arguments
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -i | --ip)
@@ -23,9 +23,9 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-# Check if required options are provided
+
 if [[ -z $ip ]]; then
-    echo "Please specify an sutiable IP address with -i"
+    echo "Please specify a sutiable IP address with -i"
     exit 1
 fi
 
@@ -34,7 +34,7 @@ if [[ -z $ports ]]; then
     exit 1
 fi
 
-# Scan and display open ports
+
 for ((i = 1; i <= ports; i++)); do
     if (echo > /dev/tcp/$ip/$i) > /dev/null 2>&1; then
         echo "$ip:$i is open"
